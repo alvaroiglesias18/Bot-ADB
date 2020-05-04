@@ -1,0 +1,37 @@
+cd "C:\platform-tools"
+#Abrir Twitter
+.\adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main -d 'https://twitter.com/home'
+Start-Sleep -Seconds 2
+#Pulsar sobre escribir tweet
+.\adb shell input tap 927 1873
+Start-Sleep -Seconds 3
+#Escribir el primer tweet
+.\adb shell input text "Jesus%sapruebame,%ste%sescribo%sdesde%sel%smovil"
+Start-Sleep -Seconds 1
+#Publicar
+.\adb shell input tap 926 344
+Start-Sleep -Seconds 1
+#Publicar segundo tweet
+.\adb shell input tap 916 1755
+Start-Sleep -Seconds 1
+#Publicar segundo tweet
+.\adb shell input tap 312 512
+#Escribir el primer tweet
+Start-Sleep -Seconds 3
+.\adb shell input text "Ponme%sun%s10%saqui%stambien"
+Start-Sleep -Seconds 2
+#Buscar giff
+.\adb shell input tap 378 879
+Start-Sleep -Seconds 1
+#Caja giff
+.\adb shell input tap 427 356
+Start-Sleep -Seconds 1
+#Escribir giff a buscar
+Start-Sleep -Seconds 2
+.\adb shell input text "Awww"
+Start-Sleep -Seconds 1
+#Elegir giff
+.\adb shell input tap 228 695
+Start-Sleep -Seconds 1
+#Publicar
+.\adb shell input tap 926 344
